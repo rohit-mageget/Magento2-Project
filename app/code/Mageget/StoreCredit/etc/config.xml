@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+     <default>
+        <StoreCredit>
+           <general>
+                <enable>1</enable>
+                <credittax>1</credittax>
+           </general>
+           <display>
+                <enable_credit_checkout>1</enable_credit_checkout>
+                <enable_credit_cart>1</enable_credit_cart>
+                <show_credit_balance>1</show_credit_balance>
+                <hide_credit_balance>1</hide_credit_balance>
+           </display>
+         </StoreCredit>
+        <StoreCreditInCustomer>
+           <store_credit_balance>
+                <add_credit_balance>100</add_credit_balance>
+           </store_credit_balance>
+         </StoreCreditInCustomer>
+     </default>
+</config>

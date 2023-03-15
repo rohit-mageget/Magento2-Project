@@ -1,0 +1,1 @@
+"Fatal Error: 'Allowed memory size of 792723456 bytes exhausted (tried to allocate 377491456 bytes)' in 'C:\\xampp\\htdocs\\magento2\\app\\code\\Mageget\\OfflinePayment\\Observer\\OrderData.php' on line 19"

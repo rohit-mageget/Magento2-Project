@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mageget_StoreCredit::StoreCredit" title="Store Credit" module="Mageget_StoreCredit" sortOrder="51" resource="Mageget_StoreCredit::StoreCredit"/>
+        <add id="Mageget_StoreCredit::TransactionHistory" title="Manage Transaction History" module="Mageget_StoreCredit" sortOrder="50" action="credit/grid" resource="Mageget_StoreCredit::TransactionHistory" parent="Mageget_StoreCredit::StoreCredit"/>
+        <add id="Mageget_StoreCredit::Settings" title="Settings" module="Mageget_StoreCredit" sortOrder="99" parent="Mageget_StoreCredit::StoreCredit" action="adminhtml/system_config/edit/section/StoreCreditfield" resource="Mageget_StoreCredit::Settings"/>
+        <add id="Mageget_StoreCredit::StoreCredit_configuration" title="Configuration" module="Mageget_StoreCredit" sortOrder="100" parent="Mageget_StoreCredit::Settings" action="adminhtml/system_config/edit/section/StoreCreditfield" resource="Mageget_StoreCredit::StoreCredit_configuration"/>
+    </menu>
+</config>

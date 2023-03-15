@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="quote" resource="default" engine="innodb">
+        <column xsi:type="varchar" name="storecredit" nullable="true" length="255" comment="storecredit"/>
+    </table>
+    <table name="sales_order" resource="default" engine="innodb">
+        <column xsi:type="varchar" name="storecredit" nullable="true" length="255" comment="storecredit"/>
+    </table>
+    <table name="customer_entity" resource="default" engine="innodb">
+        <column xsi:type="varchar" name="storecredit" nullable="true" length="255" comment="storecredit"/>
+    </table>
+</schema>

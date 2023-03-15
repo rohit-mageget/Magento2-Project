@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!--
+
+/**
+
+* Copyright © Magento, Inc. All rights reserved.
+
+* See COPYING.txt for license details.
+
+*/
+
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+
+<menu>
+
+<add id="Md_Blog::view" title="Md Blog" module="Md_Blog" sortOrder="10" resource="Md_Blog::view"/>
+
+<add id="Md_Blog::grid" title="Manage Blog Records" module="Md_Blog" sortOrder="9" parent="Md_Blog::view" action="blog/grid/index" resource="Md_Blog::view"/>
+
+</menu>
+
+</config>

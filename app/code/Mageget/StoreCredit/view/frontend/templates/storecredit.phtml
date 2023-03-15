@@ -1,0 +1,14 @@
+<?php
+if($this->_customerSession->isLoggedIn()){
+    if(empty($this->getStoreCreditBalance()) || is_null($this->getStoreCreditBalance())){
+            echo "Store Credit Balance : 0.00 ";
+    }else{
+    echo '<form class="header-forms" method="post">';
+    echo '<span style="float: left;">';
+    echo "Store Credit Balance :: <span id='creditprice'>".$this->getStoreCreditBalance()."</span>.00";
+    echo "</span>";
+    echo '<input type="hidden" name="value" id="creditvalue" value="'.$this->getStoreCreditBalance().'" />';
+    echo "</form>";
+    }
+}
+

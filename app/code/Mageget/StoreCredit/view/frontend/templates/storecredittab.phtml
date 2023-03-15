@@ -1,0 +1,81 @@
+<?php
+	$collection = $block->getCollection();
+if ($collection->count()) {
+?>
+<?php if ($block->getPagerHtml()): ?>
+<div class="order-products-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
+<?php endif ?>
+<div class="table-wrapper orders-history">
+    <table class="data table table-order-items history" id="my-orders-table">
+        <caption class="table-caption"><?php echo __('Grid Record') ?></caption>
+        <thead>
+        <tr>
+            <th scope="col" class="col id"><?php echo __('ID') ?></th>
+            <th scope="col" class="col name"><?php echo __('Customer Id') ?></th>
+            <th scope="col" class="col email"><?php echo __('Balance Change') ?></th>
+            <th scope="col" class="col telephone"><?php echo __('Current Balance') ?></th>
+            <th scope="col" class="col createat"><?php echo __('Action') ?></th>
+            <th scope="col" class="col createat"><?php echo __('Date') ?></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+				foreach ($collection as $item): ?>
+        <tr>
+            <td data-th="<?= $block->escapeHtml(__('ID')) ?>" class="col id">
+                <?php echo $item->getEntityId() ?>
+            </td>
+            <td data-th="<?= $block->escapeHtml(__('Customer Id')) ?>" class="col name">
+                <?php echo $item->getCustomerId() ?>
+            </td>
+            <td data-th="<?= $block->escapeHtml(__('Balance Change')) ?>" class="col email">
+                <?php 
+                    $changecredit = $item->getCreditChange();
+                    $b = str_split($changecredit);
+                if($b[0] == '-'){
+
+                    $cn = '<span style="color: red;"> ' . $changecredit.  '</span>';
+                    echo $cn;
+                }else{
+
+                    $cn = '<span style="color: green;"> ' . $changecredit.  '</span>';
+                    echo $cn;
+
+                }
+                
+                ?>
+            </td>
+            <td data-th="<?= $block->escapeHtml(__('Current Balance')) ?>" class="col telephone">
+                <?php echo $item->getCurrentCredit() ?>
+            </td>
+            <td data-th="<?= $block->escapeHtml(__('Action')) ?>"
+                class="col title"><?php 
+                
+                $changecredit = $item->getCreditChange();
+                $b = str_split($changecredit);
+            if($b[0] == '-'){
+
+                $cn = '<span style="color: red;"> ' . $item->getAction() .  '</span>';
+                echo $cn;
+            }else{
+
+                $cn = '<span style="color: green;"> ' . $item->getAction() .  '</span>';
+                echo $cn;
+
+            }
+            ?></td>
+            <td data-th="<?= $block->escapeHtml(__('Date')) ?>"
+                class="col title"><?php echo date('Y-m-d', strtotime($item->getCreatedAt())); ?></td>
+        </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+<?php if ($block->getPagerHtml()) {?>
+<div class="order-products-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
+<?php } else{ ?>
+    <div class="message info empty"><span><?php echo __('No any record.'); ?></span></div>
+<?php } ?>
+<?php
+	}
+	?>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Webkul\MagentoTopProducts\Api\ProductRepositoryInterface" type="Webkul\MagentoTopProducts\Model\ProductRepositoryModel" />
+    <preference for="Webkul\MagentoTopProducts\Api\Data\ProductSearchResultsInterface" type="Webkul\MagentoTopProducts\Model\ProductSearchResults" />
+    <preference for="Webkul\MagentoTopProducts\Api\ProductSearchCriteriaInterface" type="Webkul\MagentoTopProducts\Model\ProductSearchCriteria" />
+</config>

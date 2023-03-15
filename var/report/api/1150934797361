@@ -1,0 +1,1 @@
+"Fatal Error: 'Allowed memory size of 792723456 bytes exhausted (tried to allocate 373297152 bytes)' in 'C:\\xampp\\htdocs\\magento2\\app\\code\\Mageget\\OfflinePayment\\Observer\\BeforeOrderPaymentSaveObserver.php' on line 52"

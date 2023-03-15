@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_payment_save_before">
+        <observer name="payment_before_save" instance="Mageget\OfflinePayment\Observer\BeforeOrderPaymentSaveObserver" />
+    </event>
+    <!-- <event name="sales_order_place_after">
+        <observer name="payment_before_save" instance="Mageget\OfflinePayment\Observer\BeforeOrderPaymentSaveObserver" />
+    </event> -->
+     <!-- <event name="checkout_onepage_controller_success_action">
+        <observer name="paymentfields_paymentfields_observer_frontend_sales_orderpaymentsavebefore" instance="Mageget\OfflinePayment\Observer\Frontend\Sales\OrderPaymentSaveBefore" />
+    </event> -->
+    <!-- <event name="payment_method_assign_data_simple">
+        <observer name="sample_payment_gateway_data_assign" instance="Mageget\OfflinePayment\Observer\DataAssignObserver" />
+    </event> -->
+     <!-- <event name="sales_order_place_after">
+       <observer name="place_order_after" instance="Mageget\OfflinePayment\Observer\OrderData" />
+   </event> -->
+</config>

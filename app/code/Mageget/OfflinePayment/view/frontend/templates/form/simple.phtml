@@ -1,0 +1,28 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * @var $block \Magento\OfflinePayments\Block\Form\Purchaseorder
+ * @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer
+ */
+$methodCode = $block->escapeHtml($block->getMethodCode());
+?>
+<fieldset class="fieldset items <?= /* @noEscape */ $methodCode ?>"
+          id="payment_form_<?= /* @noEscape */ $methodCode ?>">
+    <div class="field number required">
+        <label for="company_name" class="label"><span><?= $block->escapeHtml(__('Company Name')) ?></span></label>
+        <div class="control">
+            <input type="text" id="company_name" name="payment[company_name]"
+                   title="<?= $block->escapeHtml(__('Company Name')) ?>"
+                   class="input-text required-entry"
+                   value="<?= $block->escapeHtml($block->getInfoData('company_name')) ?>" />
+        </div>
+    </div>
+</fieldset>
+<?= /* @noEscape */ $secureRenderer->renderStyleAsTag(
+    "display:none",
+    'fieldset#payment_form_' . /* @noEscape */ $methodCode
+) ?>

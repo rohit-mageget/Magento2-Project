@@ -1,0 +1,93 @@
+
+<!-- ko if: isCustomerLoggedIn() -->
+<div class="component-wrapper store-credit">
+    <div data-bind="text: ''"></div>
+    <div class="title" data-role="title" data-bind="css: {style: getCss()}">
+        <strong id="block-discount-heading" role="heading" aria-level="2" data-bind="click: getClick, text: getValue()">.</strong>
+    </div>
+    <div class="content" data-role="content" aria-labelledby="block-discount-heading">
+        <form id="discount-credit-form" action="" method="post">
+                <div class="field">
+                    <div class="control">
+                    <input type="text"
+                               class="input-text"
+                               id="storecredit"
+                               name="storecredit"
+                               value=""
+                               placeholder="Enter credit price"
+                        />
+                    </div>
+                </div>
+                <div class="actions-toolbar">
+                    <div class="primary">
+                    <button class="action apply primary" type="button" value="apply" name="apply" id="applyCredit" data-bind="click: applyCredit">
+                            <span>Apply Credit</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="actions-toolbar">
+                    <div class="primary">
+                    <button class="action apply primary" type="button" value="cancel" name="cancel" data-bind="click: cancelCredit">
+                            <span>Cancel Credit</span>
+                        </button>
+                    </div>
+                </div>
+            
+        </form>
+    </div>
+</div>
+
+<style>
+    .checkout-index-index form#discount-credit-form {
+    width: 450px;
+    padding-top: 20px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkout-index-index form#discount-credit-form.accordion {
+    width: 450px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+strong#block-discount-heading:after {
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+    content: '\e622';
+    font-family: 'luma-icons';
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+}
+strong#block-discount-heading.accordion:after {
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+    content: '\e621';
+    font-family: 'luma-icons';
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+}
+
+.component-wrapper.store-credit {
+    margin-left: 20px;
+}
+strong#block-discount-heading, strong#block-discount-heading:after {
+    cursor: pointer;
+}
+
+</style>
+
+<!-- /ko -->

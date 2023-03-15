@@ -1,0 +1,111 @@
+<?php
+// This template file use in checkout cart page layout in magento2
+if($this->_customerSession->isLoggedIn()){
+    // echo '<span style="float: left;"><b>';
+    // echo "Store Credit Balance : ".$this->getStoreCreditBalance().".00";
+    // echo "</span></b>";
+    ?>
+    <div class="discount-credit-form-container">
+    </br><div class="title" data-role="title">
+        <strong id="block-discount-heading" role="heading" aria-level="2"><?= $block->escapeHtml(__('Store Credit Balance : ')).$this->getStoreCreditBalance().".00" ?></strong>
+    </div>
+    <div class="discount-credit-form-content" data-role="content" aria-labelledby="block-discount-heading">
+        <form id="discount-credit-form"
+              action="<?= $block->escapeUrl($block->getUrl('storecredit/cart/creditpost')) ?>"
+              method="post">
+                <div class="field">
+                    <div class="control">
+                    <input type="text"
+                               class="input-text"
+                               id="storecredit"
+                               name="storecredit"
+                               value=""
+                               placeholder="<?= $block->escapeHtmlAttr(__('Enter credit price')) ?>"
+                        />
+                    </div>
+                </div>
+                <div class="actions-toolbar">
+                    <div class="primary">
+                    <button class="action apply primary" type="submit" value="<?= $block->escapeHtmlAttr(__('apply')) ?>" name="apply">
+                            <span><?= $block->escapeHtml(__('Apply Credit')) ?></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="actions-toolbar">
+                    <div class="primary">
+                    <button class="action apply primary" type="submit" value="<?= $block->escapeHtmlAttr(__('cancel')) ?>" name="cancel">
+                            <span><?= $block->escapeHtml(__('Cancel Credit')) ?></span>
+                        </button>
+                    </div>
+                </div>
+            
+        </form>
+    </div>
+</div>
+
+    <?php
+}
+?>
+
+<style>
+    .discount-credit-form-container form#discount-credit-form {
+    width: 450px;
+    padding-top: 20px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.discount-credit-form-content{
+    width: 500px;
+}
+
+.discount-credit-form-container {
+    width: 450px;
+}
+
+.discount-credit-form-container form#discount-credit-form.accordion {
+    width: 450px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.discount-credit-form-container strong#block-discount-heading:after {
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+    content: '\e622';
+    font-family: 'luma-icons';
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+}
+.discount-credit-form-container strong#block-discount-heading.accordion:after {
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+    content: '\e621';
+    font-family: 'luma-icons';
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+}
+
+.component-wrapper.store-credit {
+    margin-left: 20px;
+}
+.discount-credit-form-container strong#block-discount-heading, .discount-credit-form-container strong#block-discount-heading:after {
+    cursor: pointer;
+    color: #006bb4;
+}
+</style>
+   

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <simple>
+                <active>1</active>
+                <model>Mageget\OfflinePayment\Model\Payment\Simple</model>
+                <order_status>pending</order_status>
+                <title>Offline Payment</title>
+                <bank_name>1</bank_name>
+                <group>Offline</group>
+            </simple>
+        </payment>
+    </default>
+</config>

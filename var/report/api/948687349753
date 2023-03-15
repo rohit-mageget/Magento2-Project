@@ -1,0 +1,1 @@
+"Fatal Error: 'Class Mageget\\StoreCredit\\Setup\\Patch\\Data\\StoreCredit contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Magento\\Framework\\Setup\\Patch\\PatchRevertableInterface::revert)' in 'C:\\xampp\\htdocs\\magento2\\app\\code\\Mageget\\StoreCredit\\Setup\\Patch\\Data\\StoreCredit.php' on line 13"

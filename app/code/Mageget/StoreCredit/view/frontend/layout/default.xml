@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+    <script src="Mageget_StoreCredit::js/storecreditjs.js"/>
+    </head>
+    <body>
+        <referenceContainer name="header.panel">
+            <block class="Mageget\StoreCredit\Block\Storecredit" name="StoreCredit" as="StoreCredit" template="Mageget_StoreCredit::storecredit.phtml" before="-" />
+        </referenceContainer>
+    </body>
+</page>

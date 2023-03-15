@@ -1,0 +1,10 @@
+[2023-02-24 12:29:01] main.CRITICAL: Element 'block', attribute 'befpre': The attribute 'befpre' is not allowed.
+Line: 825
+ {"exception":"[object] (Magento\\Framework\\Config\\Dom\\ValidationException(code: 0): Element 'block', attribute 'befpre': The attribute 'befpre' is not allowed.
+Line: 825
+ at C:\\xampp\\htdocs\\magento2\\vendor\\magento\\framework\\Config\\Dom.php:461)"} []
+[2023-02-24 12:29:02] main.CRITICAL: Element 'block', attribute 'befpre': The attribute 'befpre' is not allowed.
+Line: 825
+ {"exception":"[object] (Magento\\Framework\\Config\\Dom\\ValidationException(code: 0): Element 'block', attribute 'befpre': The attribute 'befpre' is not allowed.
+Line: 825
+ at C:\\xampp\\htdocs\\magento2\\vendor\\magento\\framework\\Config\\Dom.php:461)"} []

@@ -1,0 +1,32 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1678374024;s:6:"expire";i:1678377624;s:4:"tags";s:47:"ca3_BLOCK_HTML,ca3_CAT_P_790,ca3_CAT_P,ca3_MAGE";}
+                <div class="swatch-opt-790"
+         data-role="swatch-option-790"></div>
+
+    <script type="text/x-magento-init">
+        {
+            "[data-role=swatch-option-790]": {
+                "Magento_Swatches/js/swatch-renderer": {
+                    "selectorProduct": ".product-item-details",
+                    "onlySwatches": true,
+                    "enableControlLabel": false,
+                    "numberToShow": 16,
+                    "jsonConfig": {"attributes":{"147":{"id":"147","code":"size","label":"Size","options":[{"id":"175","label":"32","products":["778","779","780"]},{"id":"176","label":"33","products":["781","782","783"]},{"id":"177","label":"34","products":["784","785","786"]},{"id":"178","label":"36","products":["787","788","789"]}],"position":"0"},"93":{"id":"93","code":"color","label":"Color","options":[{"id":"49","label":"Black","products":["778","781","784","787"]},{"id":"50","label":"Blue","products":["779","782","785","788"]},{"id":"53","label":"Green","products":["780","783","786","789"]}],"position":"1"}},"template":"$<%- data.price %>","currencyFormat":"$%s","optionPrices":{"778":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"779":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"780":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"781":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"782":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"783":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"784":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"785":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"786":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"787":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"788":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}},"789":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57},"tierPrices":[],"msrpPrice":{"amount":0}}},"priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},"prices":{"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57}},"productId":"790","chooseText":"Choose an Option...","images":[],"index":{"778":{"147":"175","93":"49"},"779":{"147":"175","93":"50"},"780":{"147":"175","93":"53"},"781":{"147":"176","93":"49"},"782":{"147":"176","93":"50"},"783":{"147":"176","93":"53"},"784":{"147":"177","93":"49"},"785":{"147":"177","93":"50"},"786":{"147":"177","93":"53"},"787":{"147":"178","93":"49"},"788":{"147":"178","93":"50"},"789":{"147":"178","93":"53"}},"channel":"website","salesChannelCode":"base","sku":{"778":"MP05-32-Black","779":"MP05-32-Blue","780":"MP05-32-Green","781":"MP05-33-Black","782":"MP05-33-Blue","783":"MP05-33-Green","784":"MP05-34-Black","785":"MP05-34-Blue","786":"MP05-34-Green","787":"MP05-36-Black","788":"MP05-36-Blue","789":"MP05-36-Green"},"names":{"778":"Kratos Gym Pant-32-Black","779":"Kratos Gym Pant-32-Blue","780":"Kratos Gym Pant-32-Green","781":"Kratos Gym Pant-33-Black","782":"Kratos Gym Pant-33-Blue","783":"Kratos Gym Pant-33-Green","784":"Kratos Gym Pant-34-Black","785":"Kratos Gym Pant-34-Blue","786":"Kratos Gym Pant-34-Green","787":"Kratos Gym Pant-36-Black","788":"Kratos Gym Pant-36-Blue","789":"Kratos Gym Pant-36-Green"},"skus":{"778":"MP05-32-Black","779":"MP05-32-Blue","780":"MP05-32-Green","781":"MP05-33-Black","782":"MP05-33-Blue","783":"MP05-33-Green","784":"MP05-34-Black","785":"MP05-34-Blue","786":"MP05-34-Green","787":"MP05-36-Black","788":"MP05-36-Blue","789":"MP05-36-Green"},"desc":{"778":null,"779":null,"780":null,"781":null,"782":null,"783":null,"784":null,"785":null,"786":null,"787":null,"788":null,"789":null}},
+                    "jsonSwatchConfig": {"147":{"175":{"type":"0","value":"32","label":"32"},"176":{"type":"0","value":"33","label":"33"},"177":{"type":"0","value":"34","label":"34"},"178":{"type":"0","value":"36","label":"36"},"additional_data":"{\"swatch_input_type\":\"text\",\"update_product_preview_image\":1,\"use_product_image_for_swatch\":0}"},"93":{"49":{"type":"1","value":"#000000","label":"Black"},"50":{"type":"1","value":"#1857f7","label":"Blue"},"53":{"type":"1","value":"#53a828","label":"Green"},"additional_data":"{\"swatch_input_type\":\"visual\",\"update_product_preview_image\":1,\"use_product_image_for_swatch\":0}"}},
+                    "mediaCallback": "http\u003A\u002F\u002Fmage.magento.com\u002Fswatches\u002Fajax\u002Fmedia\u002F",
+                    "jsonSwatchImageSizeConfig": {"swatchImage":{"width":30,"height":20},"swatchThumb":{"height":90,"width":110}},
+                    "showTooltip": 1                }
+            }
+        }
+    </script>
+
+    <script type="text/x-magento-init">
+        {
+            "[data-role=priceBox][data-price-box=product-id-790]": {
+                "priceBox": {
+                    "priceConfig": {
+                        "priceFormat": {"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},
+                        "prices": {"baseOldPrice":{"amount":57},"oldPrice":{"amount":57},"basePrice":{"amount":57},"finalPrice":{"amount":57}}                    }
+                }
+            }
+        }
+    </script>

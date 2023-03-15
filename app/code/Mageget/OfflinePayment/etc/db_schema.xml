@@ -1,0 +1,15 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="quote_payment" resource="checkout" engine="innodb" comment="Sales Flat Quote Payment">
+        <column xsi:type="text" name="company_name" nullable="true" comment="company_name"/>
+        <column xsi:type="text" name="bank_name" nullable="true" comment="bank_name"/>
+        <column xsi:type="text" name="cheque_number" nullable="true" comment="cheque_number"/>
+        <column xsi:type="text" name="gst_number" nullable="true" comment="gst_number"/>
+    </table>
+    <table name="sales_order_payment" resource="sales" engine="innodb" comment="Sales Flat Order Payment">
+        <column xsi:type="text" name="company_name" nullable="true" comment="company_name"/>
+        <column xsi:type="text" name="bank_name" nullable="true" comment="bank_name"/>
+        <column xsi:type="text" name="cheque_number" nullable="true" comment="cheque_number"/>
+        <column xsi:type="text" name="gst_number" nullable="true" comment="gst_number"/>
+    </table>
+</schema>

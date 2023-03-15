@@ -1,0 +1,16 @@
+<?php $blockObj = $block->getLayout()->createBlock('\Mageget\Countdown\Block\Salesrule\Rule'); $cartRule = $blockObj->getAllActiveCartRule(); $i=1; foreach($cartRule as $rule) { if($rule->getData('display_header_is_active') == 1){ $currentDate = $blockObj->getCurruntDate(); $todate = $rule->getToDate(); $fromdate = $rule->getFromDate(); if($rule->getToDate() != null) { if(strtotime($todate) >= strtotime($currentDate) && strtotime($fromdate) <= strtotime($currentDate)){ ?> <div class="cart-rule-container"><div class="cart-rule-container-inner"><div class="title cart-rule-main" style="text-align:left;"><span>Get discount to apply this code : <b><?php echo $rule->getCode(); ?></b><span></div><div class="description cart-rule-main" style="text-align:center;"><span><b><?php echo $rule->getDescription(); ?></b><span></div><div class="cart-rule-main"><div id="countdowntimer" class="countdowntimer" style="text-align:center;margin:0px auto;"><span id="future_date_<?php echo $i;?>"><span></div></div></div></div><script>
+                                require([
+                                    'jquery',
+                                    'Mageget_Countdown/js/jquery.countdownTimer'
+                                ], function ($) {
+                                    console.log('countdowntimer start');
+                                    jQuery("#future_date_<?php echo $i;?>").countdowntimer({
+
+                                        startDate : "<?php echo $blockObj->getTimeAccordingToTimeZone(); ?>",
+                                        dateAndTime : "<?php echo str_replace('-','/',$rule->getToDate()); ?>",
+                                        size : "lg",
+                                        regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+                                        regexpReplaceWith: "$1 days $2 hours $3 minutes $4 seconds REMAINING"        
+                                        
+                                    });    
+                                });</script><?php } } $i++; } } ?> <style> .cart-rule-container-inner { width: 66% !important; display: flex; color: white !important; justify-content: space-evenly; background: orange; margin: 0px auto !important; } .cart-rule-container { width: 100% !important; color: white !important; background: orange; padding: 12px 0px; margin: 4px 0px; } .cart-rule-container span { color: white !important; background: transparent !important; font-weight: normal !important; font-size: 15px !important; text-transform: capitalize !important; } .cart-rule-container div#countdowntimer { border-radius: 10px !important; border-width: 1px !important; border-color: #e20a0a !important; border-style: solid !important; padding: 0px 10px !important; text-align: center; background-color: transparent !important; margin-top: -1px !important; float: right; } .cart-rule-main { width: 33%; }</style>

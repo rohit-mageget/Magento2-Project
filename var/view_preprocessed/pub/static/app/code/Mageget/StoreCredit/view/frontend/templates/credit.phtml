@@ -1,0 +1,12 @@
+<div id="custom-component" data-bind="scope:'customcomponent'"><?php if($this->_customerSession->isLoggedIn()){ ?> <!-- ko template: getTemplate() --><!-- /ko --><?php } ?> <script type="text/x-magento-init">
+    {
+        "#custom-component": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "customcomponent": {
+                        "component": "Mageget_StoreCredit/js/custom-component"
+                    }
+                }
+            }
+        }
+    }</script></div><style> div#custom-component { width: 500px; /* padding: 10px 0px; */ } div#custom-component form#discount-credit-form { display: flex; padding: 12px 0px 0px 0px; } div#custom-component .primary { margin-left: 2px; }</style>

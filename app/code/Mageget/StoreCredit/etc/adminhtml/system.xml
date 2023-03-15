@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+     <system>
+        <tab id="mageget" translate="label" sortOrder="200">
+           <label>Mageget</label>
+        </tab>
+        <section id="StoreCredit" translate="label" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
+           <class>separator-top</class>
+           <label>Store Credit</label>
+           <tab>mageget</tab>
+           <resource>Mageget_StoreCredit::configuration</resource>
+           <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                     <label>Store Credit</label>
+                     <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="credittax" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                     <label>Allowing Applying Store Credit on Tax</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+          </group>
+          <group id="display" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Spending and Display Settings</label>
+                <field id="enable_credit_checkout" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                     <label>Enable Store Credit Spanding on Checkout Page</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enable_credit_cart" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                     <label>Enable Store Credit Spanding on Cart Page</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_credit_balance" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                     <label>Show Store CreditBalance In Top Link</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="hide_credit_balance" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                     <label>Hide Top Link Display for Zero Balance</label>
+                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+          </group>
+      </section>
+       <tab id="customer" translate="label" sortOrder="300">
+            <label>Customers</label>
+        </tab>
+      <section id="StoreCreditInCustomer" translate="label" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
+           <label>Store Credit</label>
+            <tab>customer</tab>
+            <resource>Magento_Customer::config_customer</resource>
+            <group id="store_credit_balance" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>Store Credit Balance Update</label>
+               <field id="add_credit_balance" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+               <label>Add Stores Credits</label>
+               </field>
+            </group>
+       </section>
+   </system>
+</config>

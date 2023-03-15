@@ -1,0 +1,3 @@
+.admin__data-grid-wrap-static .data-grid tr td.col-credit_change, .admin__data-grid-wrap-static .data-grid tr td.col-action{
+    color:red !important;
+}

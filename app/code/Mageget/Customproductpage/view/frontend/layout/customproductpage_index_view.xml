@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content"> 
+            <block class="Magento\Framework\View\Element\Template" name="customproduct-page" template="Mageget_Customproductpage::customproductpage.phtml" before="-"> 
+            </block> 
+        <referenceBlock name="product.info.details">
+        <block class="Magento\Catalog\Block\Product\View" name="custom.tab" template="Mageget_Customproductpage::custom_tab.phtml" group="detailed_info" >
+           <arguments>
+              <argument translate="true" name="title" xsi:type="string">Custom Tab</argument>
+              <argument name="sort_order" xsi:type="string">30</argument>
+           </arguments>
+       </block>
+    </referenceBlock>
+        </referenceContainer> 
+    </body>
+</page>

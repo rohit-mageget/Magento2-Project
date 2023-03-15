@@ -1,0 +1,38 @@
+<div id="custom-component" data-bind="scope:'customcomponent'">
+<?php
+if($this->_customerSession->isLoggedIn()){
+    // echo '<span style="float: left;"><b>';
+    // echo "Store Credit Balance : ".$this->getStoreCreditBalance().".00";
+    // echo "</b></span><br/>";
+    ?>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <?php
+}
+?>
+    <script type="text/x-magento-init">
+    {
+        "#custom-component": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "customcomponent": {
+                        "component": "Mageget_StoreCredit/js/custom-component"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>
+<style>
+div#custom-component {
+    width: 500px;
+    /* padding: 10px 0px; */
+}
+div#custom-component form#discount-credit-form {
+    display: flex;
+    padding: 12px 0px 0px 0px;
+}
+div#custom-component .primary {
+    margin-left: 2px;
+}
+</style>

@@ -1,0 +1,15 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Mageget_StoreCredit::css/grid.css"/>
+        <script src="Mageget_StoreCredit::js/grid.js"/>
+    </head>
+    <body>
+           <referenceBlock name="customer_form">
+             <block class="Mageget\StoreCredit\Block\Adminhtml\Edit\Tab\Credit" name="customer_edit_tab_credit" >
+              <action method="setTabLabel">
+                  <argument name="label" xsi:type="string">Customer Credit</argument>
+              </action>
+            </block>
+          </referenceBlock>
+    </body>
+</page>
